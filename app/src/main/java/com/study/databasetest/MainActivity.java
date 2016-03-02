@@ -102,9 +102,6 @@ public class MainActivity extends AppCompatActivity {
                 db.beginTransaction();
                 try {
                     db.delete("Book", null, null);
-                    if(true) {
-                        throw new NullPointerException();
-                    }
 
                     ContentValues values = new ContentValues();
                     values.put("name", "Game of Thrones");
