@@ -23,10 +23,10 @@ public class DatabaseProvider extends ContentProvider {
 
     static {
         uriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
-        uriMatcher.addURI(AUTHORITY, "book", BOOK_DIR);
-        uriMatcher.addURI(AUTHORITY, "book/#", BOOK_ITEM);
+        uriMatcher.addURI(AUTHORITY, "Book", BOOK_DIR);
+        uriMatcher.addURI(AUTHORITY, "Book/#", BOOK_ITEM);
         uriMatcher.addURI(AUTHORITY, "category", CATEGORY_DIR);
-        uriMatcher.addURI(AUTHORITY. "category/#", CATEGORY_ITEM);
+        uriMatcher.addURI(AUTHORITY, "category/#", CATEGORY_ITEM);
     }
 
     @Override
